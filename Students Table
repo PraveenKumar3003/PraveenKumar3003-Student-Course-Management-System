@@ -1,0 +1,10 @@
+CREATE TABLE Students (
+    student_id INT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    department VARCHAR(50)
+);
+
+INSERT INTO Students VALUES (1, 'Alice', 20, 'Computer Science');
+INSERT INTO Students VALUES (2, 'Bob', 21, 'Mechanical');
+INSERT INTO Students VALUES (3, 'Charlie', 22, 'Electrical');
