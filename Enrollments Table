@@ -1,0 +1,13 @@
+CREATE TABLE Enrollments (
+    enrollment_id INT PRIMARY KEY,
+    student_id INT,
+    course_id INT,
+    marks INT,
+    FOREIGN KEY (student_id) REFERENCES Students(student_id),
+    FOREIGN KEY (course_id) REFERENCES Courses(course_id)
+);
+
+INSERT INTO Enrollments VALUES (1, 1, 101, 85);
+INSERT INTO Enrollments VALUES (2, 2, 102, 78);
+INSERT INTO Enrollments VALUES (3, 3, 103, 90);
+INSERT INTO Enrollments VALUES (4, 1, 103, 88); -- Alice took Circuits too
